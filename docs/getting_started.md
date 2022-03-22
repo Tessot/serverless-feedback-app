@@ -26,7 +26,7 @@ The following steps can be used to deploy the frontend:
 
 3. Navigate to the CDK Application to that will be used to create the CI/CD pipeline which consists of the following resources: Amazon CodePipeline, Amazon CodeCommit, Amazon CodeBuild and Amazon CodeDeploy
 
-- **`cd /home/ec2-user/environment/aws-serverless-feedback-app/feedback-app-backend/cicd-pipeline/`**
+- **`cd /home/ec2-user/environment/aws-serverless-feedback-app/feedback-app-backend/cicdpipeline/`**
 
 4. Install the packages required by the CDK Application (ignore any the warnings)
 
@@ -73,7 +73,7 @@ The following steps can be used to deploy the **frontend after setting up the ba
 
 3. Navigate to the CDK Application to that will be used to create the following infrastructure: CodeCommit Repository (used as source repo) and AWS Amplify Application (used for hosting the frontend)
 
-- **`cd /home/ec2-user/environment/aws-serverless-feedback-app/feedback-app-frontend/amplify-infra-code/`**
+- **`cd /home/ec2-user/environment/aws-serverless-feedback-app/feedback-app-frontend/amplify-infra-stack/`**
 
 4. Install the packages required by the CDK Application (ignore any the warnings)
 
@@ -97,7 +97,7 @@ The following steps can be used to deploy the **frontend after setting up the ba
 - **`git add .`**
 - **`git commit -m "first commit"`**
 - **`git remote add codecommit codecommit::{REGION_PLACEHOLDER}://feedback-app-repo-frontend`**
-- **`git push -u codecommit master`**
+- **`git push -u codecommit main`**
 
 ## Step 3 - Accessing the Application
 
@@ -169,10 +169,10 @@ Note: To receive a message via Chime, follow the instructions [here](backend_dee
 
 2. Delete the backend CI/CD pipeline
 
-- **`cd /home/ec2-user/environment/aws-serverless-feedback-app/feedback-app-backend/cicd-pipeline/`**
+- **`cd /home/ec2-user/environment/aws-serverless-feedback-app/feedback-app-backend/cicdpipeline/`**
 - **`cdk destroy`**
 
 3. Delete the frontend resources
 
-- **`cd /home/ec2-user/environment/aws-serverless-feedback-app/feedback-app-frontend/amplify-infra-code/`**
+- **`cd /home/ec2-user/environment/aws-serverless-feedback-app/feedback-app-frontend/amplify-infra-stack/`**
 - **`cdk destroy`**
