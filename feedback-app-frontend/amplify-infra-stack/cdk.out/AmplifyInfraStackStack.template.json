@@ -80,7 +80,7 @@
         "aws:cdk:path": "AmplifyInfraStackStack/feedback-app-frontend/Resource"
       }
     },
-    "feedbackappfrontendmasterCB7CD4FA": {
+    "feedbackappfrontendmainA7834220": {
       "Type": "AWS::Amplify::Branch",
       "Properties": {
         "AppId": {
@@ -89,12 +89,12 @@
             "AppId"
           ]
         },
-        "BranchName": "master",
+        "BranchName": "main",
         "EnableAutoBuild": true,
         "EnablePullRequestPreview": true
       },
       "Metadata": {
-        "aws:cdk:path": "AmplifyInfraStackStack/feedback-app-frontend/master/Resource"
+        "aws:cdk:path": "AmplifyInfraStackStack/feedback-app-frontend/main/Resource"
       }
     },
     "CDKMetadata": {

@@ -1,7 +1,7 @@
 {
   "version": "16.0.0",
   "files": {
-    "e4384fd676cc0dec356ad85b8abb506bfabae6f06b5d17e789689c8b01daaa1f": {
+    "923f334cd7c80ca9a5eeec18106cff8e2d8d71424beeba45fafcd4f6195f3c46": {
       "source": {
         "path": "AmplifyInfraStackStack.template.json",
         "packaging": "file"
@@ -9,7 +9,7 @@
       "destinations": {
         "current_account-current_region": {
           "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
-          "objectKey": "e4384fd676cc0dec356ad85b8abb506bfabae6f06b5d17e789689c8b01daaa1f.json",
+          "objectKey": "923f334cd7c80ca9a5eeec18106cff8e2d8d71424beeba45fafcd4f6195f3c46.json",
           "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
         }
       }

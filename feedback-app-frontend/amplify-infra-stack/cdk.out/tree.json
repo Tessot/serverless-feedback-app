@@ -158,13 +158,13 @@
                   "version": "2.16.0"
                 }
               },
-              "master": {
-                "id": "master",
-                "path": "AmplifyInfraStackStack/feedback-app-frontend/master",
+              "main": {
+                "id": "main",
+                "path": "AmplifyInfraStackStack/feedback-app-frontend/main",
                 "children": {
                   "Resource": {
                     "id": "Resource",
-                    "path": "AmplifyInfraStackStack/feedback-app-frontend/master/Resource",
+                    "path": "AmplifyInfraStackStack/feedback-app-frontend/main/Resource",
                     "attributes": {
                       "aws:cdk:cloudformation:type": "AWS::Amplify::Branch",
                       "aws:cdk:cloudformation:props": {
@@ -174,7 +174,7 @@
                             "AppId"
                           ]
                         },
-                        "branchName": "master",
+                        "branchName": "main",
                         "enableAutoBuild": true,
                         "enablePullRequestPreview": true
                       }

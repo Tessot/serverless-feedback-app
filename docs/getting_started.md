@@ -50,7 +50,8 @@ The following steps can be used to deploy the frontend:
 - **`git add .`**
 - **`git commit -m "first commit"`**
 - **`git remote add codecommit codecommit::{REGION_PLACEHOLDER}://feedback-app-repo-backend`**
-- **`git push -u codecommit master`**
+- **`git branch -M main`**
+- **`git push -u codecommit main`**
 
 9. Identify the url for the API Gateway (Note: The API gateway will take some time (approx. 5 mins) to be created after committing the code so run the command multiple times until the API name is visible)
 
@@ -97,6 +98,7 @@ The following steps can be used to deploy the **frontend after setting up the ba
 - **`git add .`**
 - **`git commit -m "first commit"`**
 - **`git remote add codecommit codecommit::{REGION_PLACEHOLDER}://feedback-app-repo-frontend`**
+- **`git branch -M main`**
 - **`git push -u codecommit main`**
 
 ## Step 3 - Accessing the Application
@@ -109,7 +111,7 @@ The following steps can be used to deploy the **frontend after setting up the ba
 
 2. Identify the "defaultDomain" field of the app with the name "feedback-app-frontend" and navigate to the URL below on your browser
 
-- **`https://master.{defaultDoman}`**
+- **`https://main.{defaultDoman}`**
 
 ### Option 2 - Via AWS Console
 

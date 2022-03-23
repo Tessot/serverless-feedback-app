@@ -294,7 +294,7 @@
                   "Version": "1"
                 },
                 "Configuration": {
-                  "StackName": "feedback-app-backendv2",
+                  "StackName": "feedback-app-backend",
                   "Capabilities": "CAPABILITY_NAMED_IAM",
                   "RoleArn": {
                     "Fn::GetAtt": [
@@ -328,7 +328,7 @@
                   "Version": "1"
                 },
                 "Configuration": {
-                  "StackName": "feedback-app-backendv2",
+                  "StackName": "feedback-app-backend",
                   "ActionMode": "CHANGE_SET_EXECUTE",
                   "ChangeSetName": "feedback-app-backend-dev-changeset"
                 },
@@ -710,7 +710,7 @@
                     {
                       "Ref": "AWS::AccountId"
                     },
-                    ":stack/feedback-app-backendv2/*"
+                    ":stack/feedback-app-backend/*"
                   ]
                 ]
               }
@@ -871,7 +871,7 @@
                     {
                       "Ref": "AWS::AccountId"
                     },
-                    ":stack/feedback-app-backendv2/*"
+                    ":stack/feedback-app-backend/*"
                   ]
                 ]
               }

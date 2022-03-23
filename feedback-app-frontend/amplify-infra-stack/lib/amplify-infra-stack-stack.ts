@@ -47,6 +47,6 @@ export class AmplifyInfraStackStack extends Stack {
       })
     );
 
-    const masterBranch = feedbackFrontendApp.addBranch("master");
+    const main = feedbackFrontendApp.addBranch("main");
   }
 }
